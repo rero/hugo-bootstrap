@@ -1,0 +1,12 @@
+<p class="share">
+	{{ i18n "share" }}:
+	<a class="text-muted" href="https://twitter.com/intent/tweet/?text={{ .Title | markdownify }} - {{ .Permalink }} - @rero_centrale" aria-label="">
+		<i class="fab fa-twitter"></i>
+	</a>
+	<a class="text-muted" href="https://facebook.com/sharer/sharer.php?u={{ .Permalink }}" aria-label="">
+		<i class="fab fa-facebook"></i>
+	</a>
+	<a class="text-muted" href="mailto:?subject={{ .Title | markdownify }}&body={{ .Title | markdownify }} - {{ .Permalink }}" aria-label="">
+		<i class="far fa-envelope"></i>
+	</a>
+</p>

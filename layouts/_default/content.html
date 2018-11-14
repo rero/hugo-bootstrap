@@ -4,8 +4,10 @@
             <a class="text-dark" href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
         </h2>
         {{ partial "post-date" . }}
-        {{ partial "post-tags" . }}
         {{ partial "post-categories" . }}
+        {{ partial "post-tags" . }}
+        {{ partial "post-translations" . }}
+        <hr>
     </header>
     {{ .Content }}
 </article>

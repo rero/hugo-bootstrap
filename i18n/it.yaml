@@ -7,6 +7,9 @@
 - id: categories
   translation: "Categorie"
 
+- id: contact
+  translation: "Restare in contatto"
+
 - id: readMore
   translation: "Leggi tutto →"
 

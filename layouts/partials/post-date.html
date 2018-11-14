@@ -3,7 +3,7 @@
 {{ $author := .Params.author | default .Site.Params.author }}
 <div class="blog-post-date text-secondary">
     {{ if not .Date.IsZero }}
-        {{ .Date.Format $dateFormat }}
+	        <span class="badge badge-primary"><i class="far fa-calendar-alt"></i> {{ .Date.Format $dateFormat }}</span>
     {{ end }}
     {{ if $author }}
         {{ i18n "by" }} <span rel="author">{{ $author }}</span>

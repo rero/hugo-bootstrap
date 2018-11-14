@@ -1,8 +1,7 @@
 {{ if .Params.tags }}
-<div class="blog-post-tags text-secondary">
-    <strong>{{ i18n "tags" }}:</strong>
-    {{ range .Params.tags }}
-        <a class="badge badge-primary" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-    {{ end }}
+<div class="blog-post-categories text-secondary">
+	{{ range .Params.tags }}
+		<a class="badge badge-primary" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"><i class="fas fa-tag"></i> {{ . }}</a>
+	{{ end }}
 </div>
 {{ end }}

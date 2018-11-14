@@ -2,10 +2,13 @@
   translation: "par"
 
 - id: tags
-  translation: "Tags"
+  translation: "Étiquettes"
 
 - id: categories
   translation: "Catégories"
+
+- id: contact
+  translation: "Nous suivre"
 
 - id: readMore
   translation: "Lire la suite →"
@@ -15,6 +18,9 @@
 
 - id: related
   translation: "Voir aussi"
+
+- id: share
+  translation: "Partager "
 
 - id: recentPosts
   translation: "Publications récentes"

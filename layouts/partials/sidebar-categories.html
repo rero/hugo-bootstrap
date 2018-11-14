@@ -1,0 +1,8 @@
+<section>
+	<h4>{{ i18n "categories" }}</h4>
+	<p>
+		{{ range $name, $value := .Site.Taxonomies.categories }}
+		<a class="badge badge-primary" href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}"><i class="fas fa-folder"></i> {{ $name }}</a>
+		{{ end }}
+	</p>
+</section>

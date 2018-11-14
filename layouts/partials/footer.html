@@ -5,9 +5,6 @@
 
 {{ $copyright := default $thanks .Site.Copyright }}
 
-<footer class="blog-footer w-100">
-    <nav class="navbar navbar-light bg-light">
-        <p class="w-100 text-center">{{ $copyright }}</p>
-        <p class="w-100 text-center"><a href="#">{{ i18n "backToTop" }}</a></p>
-    </nav>
+<footer class="footer blog-footer w-100 bg-light d-flex align-items-center">
+	<p class="w-100 text-center text-muted">{{ $copyright }}</p>
 </footer>

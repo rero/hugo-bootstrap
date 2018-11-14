@@ -7,6 +7,9 @@
 - id: categories
   translation: "Categories"
 
+- id: contact
+  translation: "Stay in touch"
+
 - id: readMore
   translation: "Read More →"
 
@@ -15,6 +18,9 @@
 
 - id: related
   translation: "See also"
+
+- id: share
+  translation: "Share this post"
 
 - id: recentPosts
   translation: "Recent Posts"
