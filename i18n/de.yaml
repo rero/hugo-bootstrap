@@ -8,13 +8,16 @@
   translation: "Kategorien"
 
 - id: contact
-  translation: "in Kontact bleiben"
+  translation: "in Kontakt bleiben"
 
 - id: readMore
   translation: "Mehr lesen →"
 
 - id: translations
   translation: "Übersetzungen"
+
+- id: share
+  translation: "Teilen"
 
 - id: related
   translation: "Das könnte Sie auch interessieren"
