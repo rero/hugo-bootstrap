@@ -88,3 +88,7 @@ figure p {
     text-align: center;
     line-height: 1em;
 }
+
+.smallcaps {
+  font-variant: small-caps;
+}
