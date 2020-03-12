@@ -28,7 +28,7 @@
                         {{ i18n "language" }}
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        {{ range .Site.Home.AllTranslations }}
+                        {{ range $.Page.AllTranslations }}
                         <a class="dropdown-item" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
                         {{ end }}
                     </div>
