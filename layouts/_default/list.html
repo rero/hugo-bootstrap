@@ -2,7 +2,7 @@
 
 {{ $truncate := default true .Site.Params.truncate }}
 
-{{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
+{{ $paginator := .Paginate (where .Pages "Type" "post") }}
 {{ range $paginator.Pages }}
 
     {{ if $truncate }}
