@@ -17,7 +17,8 @@ a {
 }
 
 /* Make sure the image size is reasonable. */
-.blog-post img {
+.blog-post img,
+.blog-post video {
   max-width: 100%;
 }
 
