@@ -11,16 +11,28 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
             <ul class="navbar-nav">
                 {{ $url := .RelPermalink | relLangURL }}
+
+                {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
-                <li class="nav-item {{ if eq $url (.URL | relLangURL) }}active{{end}}">
-                    {{ if eq (hasPrefix .URL "mailto:") true }}
-                    <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                    {{ if .HasChildren }}
+                        <li class="nav-item dropdown {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                            <a class="nav-link dropdown-toggle" href="{{ .URL | relLangURL }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ .Pre }}
+                                <span>{{ .Name }}</span>
+                            </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            {{ range .Children }}
+                                    <a class="dropdown-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                            {{ end }}
+                        </div>
                     {{ else }}
-                    <a class="nav-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                        <li class="nav-item {{ if eq $url (.URL | relLangURL) }}active{{end}}">
+                            <a class="nav-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                        </li>
                     {{ end }}
-                </li>
                 {{ end }}
             </ul>
+
             {{ if gt (len .Site.Home.AllTranslations) 1 }}
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
