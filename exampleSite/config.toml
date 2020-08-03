@@ -28,6 +28,9 @@ googleAnalytics = "UA-47268287-3"
     name = "Home"
     weight = 1
   [[languages.en.menu.main]]
+    name = "Sub-menu"
+    weight = 1
+  [[languages.en.menu.main]]
     url = "/about/"
     name = "About"
     weight = 2
@@ -35,6 +38,16 @@ googleAnalytics = "UA-47268287-3"
     url = "/contact/"
     name = "Contact"
     weight = 3
+  [[languages.en.menu.main]]
+    url = "/about/"
+    name = "About (sub-menu)"
+    weight = 1
+    parent = "Sub-menu"
+  [[languages.en.menu.main]]
+    url = "/contact/"
+    name = "Contact (sub-menu)"
+    weight = 2
+    parent = "Sub-menu"
 
 [languages.es]
   languageName = "Español"
@@ -44,6 +57,9 @@ googleAnalytics = "UA-47268287-3"
     name = "Casa"
     weight = 1
   [[languages.es.menu.main]]
+    name = "Submenú"
+    weight = 1
+  [[languages.es.menu.main]]
     url = "/about/"
     name = "Acerca de"
     weight = 2
@@ -51,6 +67,17 @@ googleAnalytics = "UA-47268287-3"
     url = "/contact/"
     name = "Contacto"
     weight = 3
+  [[languages.es.menu.main]]
+    url = "/about/"
+    name = "Acerca de (submenú)"
+    weight = 1
+    parent = "Submenú"
+  [[languages.es.menu.main]]
+    url = "/contact/"
+    name = "Contacto (submenú)"
+    weight = 2
+    parent = "Submenú"
+
 
 [languages.de]
   languageName = "Deutsch"
@@ -60,6 +87,9 @@ googleAnalytics = "UA-47268287-3"
     name = "Start"
     weight = 1
   [[languages.de.menu.main]]
+    name = "Untermenü"
+    weight = 2
+  [[languages.de.menu.main]]
     url = "/about/"
     name = "Über uns"
     weight = 2
@@ -67,6 +97,16 @@ googleAnalytics = "UA-47268287-3"
     url = "/contact/"
     name = "Kontakt"
     weight = 3
+  [[languages.de.menu.main]]
+    url = "/about/"
+    name = "Über uns (Untermenü)"
+    weight = 1
+    parent = "Untermenü"
+  [[languages.de.menu.main]]
+    url = "/contact/"
+    name = "Kontakt (Untermenü)"
+    weight = 2
+    parent = "Untermenü"
 
 # Links format
 
