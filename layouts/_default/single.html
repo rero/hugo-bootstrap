@@ -11,8 +11,15 @@
     <hr>
 </header>
 <article class="blog-post">
+    {{- if isset .Params "lastmod" }}
+        <p class="updated text-primary">
+        <strong>{{ i18n "updated" }} {{ dateFormat "2006-01-02" (.Lastmod) }}</strong>
+        <p>
+    {{ end -}}
+    <article class="rero-update">
+        
+    </article>
     {{ .Content }}
-
 </article>
 
 <footer>

@@ -8,6 +8,12 @@
         {{ partial "post-tags" . }}
         {{ partial "post-translations" . }}
     </header>
+    {{- if isset .Params "lastmod" }}
+        <p class="updated text-primary">
+        <strong>{{ i18n "updated" }} {{ dateFormat "2006-01-02" (.Lastmod) }}</strong>
+        <p>
+    {{ end -}}
+
     {{ .Summary }}
     {{ if .Truncated }}
     <a href="{{ .RelPermalink }}">{{ i18n "readMore" }}</a>

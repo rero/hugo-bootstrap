@@ -33,3 +33,6 @@
 
 - id: thanks
   translation: "Hugo Vorlage entwickelt mit ❤ von {{.Xzya}}, inspiriert von {{.HugoThemeBootstrap4Blog}}"
+
+- id: updated
+  translation: "Aktualisiert am"

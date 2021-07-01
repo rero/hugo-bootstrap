@@ -31,5 +31,8 @@
 - id: language
   translation: "Langue"
 
-- id: "thanks"
+- id: thanks
   translation: "Gabarit Hugo fait avec ❤ par {{.Xzya}}, inspiré par {{.HugoThemeBootstrap4Blog}}"
+
+- id: updated
+  translation: "Mis à jour le"

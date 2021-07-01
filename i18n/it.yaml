@@ -30,3 +30,6 @@
 
 - id: thanks
   translation: "Un template Hugo fatto con il ❤ da {{.Xzya}}, ispirato da {{.HugoThemeBootstrap4Blog}}"
+
+- id: updated
+  translation: "Aggiornato il"

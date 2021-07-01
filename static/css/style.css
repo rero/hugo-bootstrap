@@ -8,6 +8,10 @@ a {
     background-color: #105e9a;
 }
 
+.text-primary {
+	color: #105e9a !important;
+}
+
 .navbar-brand img {
 	max-width: 5rem;
 }
