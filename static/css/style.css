@@ -1,5 +1,6 @@
+/* TODO: provide a focus styling; */
 a {
-	outline: none;		// TODO: provide a focus styling;
+	outline: none;		
     /* color: #289fcc; */
     color: #105e9a;
 }
@@ -82,6 +83,13 @@ figure p {
 	padding: .5em 0;
 }
 
+.rero-img-float {
+    float: right;
+    background-color: #ffffff;
+    border-radius: none;
+    width: 10rem;
+}
+
 .rero21-iframe {
     width: 60%;
     margin: 0 auto 1em auto;
@@ -96,4 +104,11 @@ figure p {
 
 .smallcaps {
   font-variant: small-caps;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-bottom: 1rem;
 }
